@@ -1,0 +1,25 @@
+{
+  "name": "better-brain-chrome-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^2.2.0",
+    "gulp-terser": "^1.2.0",
+    "run-sequence": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "tailwindcss": "^1.4.6"
+  }
+}

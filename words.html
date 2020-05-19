@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Brain | Words</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="px-10 py-6" style="width: 500px;">
+    <a
+      href="index.html"
+      class="inline-block px-2 mb-6 text-sm text-gray-600 border-2 rounded"
+      >Back</a
+    >
+    <div class="flex mb-3">
+      <span
+        class="px-4 py-2 text-sm whitespace-no-wrap bg-gray-300 border border-2 rounded-l"
+        >Word:</span
+      >
+      <input
+        name="field_name"
+        class="w-full px-4 py-2 border border-2 rounded-r"
+        type="text"
+        id="wordInput"
+        placeholder="bumfuzzle"
+      />
+    </div>
+    <div class="flex mb-6">
+      <span
+        class="px-4 py-2 text-sm whitespace-no-wrap bg-gray-300 border border-2 rounded-l"
+        >Definition:</span
+      >
+      <input
+        class="w-full px-4 py-2 border border-2 rounded-r"
+        type="text"
+        id="definitionInput"
+        placeholder="to confuse or fluster."
+      />
+    </div>
+    <button
+      class="block px-10 py-3 text-xs font-bold text-white uppercase bg-blue-800 rounded shadow hover:bg-blue-700 focus:shadow-outline focus:outline-none"
+      id="submitBtn"
+    >
+      Submit
+    </button>
+    <script src="index.js"></script>
+  </body>
+</html>
