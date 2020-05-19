@@ -3,42 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Better Brain | Words</title>
+    <title>Better Brain | Quotes</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="px-10 py-6" style="width: 500px;">
     <a
       href="index.html"
-      class="inline-block px-2 mb-6 text-sm text-gray-600 border-2 border-red-500 rounded"
+      class="inline-block px-2 mb-6 text-sm text-gray-600 border-2 border-blue-500 rounded"
       >Back</a
     >
     <div class="flex mb-3 text-sm">
-      <span
-        class="px-4 py-2 whitespace-no-wrap bg-gray-300 border border-2 rounded-l"
-        >Word:</span
-      >
-      <input
-        name="field_name"
+      <textarea
         class="w-full px-4 py-2 border border-2 rounded-r outline-none"
-        type="text"
-        id="wordInput"
-        placeholder="bumfuzzle"
-      />
+        placeholder="You know you’re in love when you can’t fall asleep because reality is finally better than your dreams."
+        id="quoteInput"
+      ></textarea>
     </div>
     <div class="flex mb-6 text-sm">
       <span
         class="px-4 py-2 text-sm whitespace-no-wrap bg-gray-300 border border-2 rounded-l"
-        >Definition:</span
+        >By:</span
       >
       <input
         class="w-full px-4 py-2 border border-2 rounded-r outline-none"
         type="text"
         id="definitionInput"
-        placeholder="to confuse or fluster."
+        placeholder="Dr. Suess"
       />
     </div>
     <button
-      class="block px-6 py-2 text-xs font-bold text-white uppercase bg-red-600 rounded shadow hover:bg-red-500 focus:shadow-outline focus:outline-none"
+      class="block px-6 py-2 text-xs font-bold text-white uppercase bg-blue-600 rounded shadow hover:bg-blue-500 focus:shadow-outline focus:outline-none"
       id="submitBtn"
     >
       Submit

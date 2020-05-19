@@ -1,7 +1,16 @@
 @tailwind base;
 
+body {
+  font-size: 1.15rem;
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
   @apply font-bold;
+}
+
+h2 {
+  @apply font-bold text-center;
 }
 
 @tailwind components;
