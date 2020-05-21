@@ -7,14 +7,16 @@ submitBtn.addEventListener('click', handleSubmit);
 function handleSubmit() {
   const name = wordInput.value;
   const definition = definitionInput.value;
-  postData('https://better-brain.herokuapp.com/wrds', {
+  postData('https://better-brain.herokuapp.com/words', {
     name,
     definition,
-  }).then((data) => {
-    console.log(data); // JSON data parsed by `response.json()` call
-    wordInput.value = '';
-    definition.value = '';
-  });
+  })
+    .then((data) => {
+      console.log(data); // JSON data parsed by `response.json()` call
+      wordInput.value = '';
+      definitionInput.value = '';
+    })
+    .catch((error) => console.log(error));
 }
 
 // Example POST method implementation:
