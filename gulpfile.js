@@ -50,6 +50,7 @@ gulp.task('css', function () {
       purgecss({
         content: ['**/*.html'],
         defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+        whitelist: ['success', 'error'],
       })
     )
     .pipe(gulp.dest('dist/'));

@@ -2,7 +2,7 @@
 
 body {
   font-size: 1.15rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier', monospace;
 }
 
 h1 {
@@ -11,6 +11,19 @@ h1 {
 
 h2 {
   @apply font-bold text-center;
+}
+
+#submitMsg {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#submitMsg.success {
+  color: green;
+}
+#submitMsg.error {
+  color: red;
 }
 
 @tailwind components;

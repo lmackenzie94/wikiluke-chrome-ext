@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Better Brain | Words</title>
+    <title>Words</title>
+    <!-- DON'T CHANGE TITLE AS FORM RELIES ON THIS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="px-10 py-6" style="width: 500px;">
     <a
       href="index.html"
-      class="inline-block px-2 mb-6 text-sm text-gray-600 border-2 border-red-500 rounded"
+      class="inline-block px-2 mb-6 text-sm text-green border-2 border-green rounded"
       >Back</a
     >
     <div class="flex mb-3 text-sm">
@@ -21,7 +22,7 @@
         name="field_name"
         class="w-full px-4 py-2 border border-2 rounded-r outline-none"
         type="text"
-        id="wordInput"
+        id="input1"
         placeholder="bumfuzzle"
       />
     </div>
@@ -33,12 +34,13 @@
       <input
         class="w-full px-4 py-2 border border-2 rounded-r outline-none"
         type="text"
-        id="definitionInput"
+        id="input2"
         placeholder="to confuse or fluster."
       />
     </div>
+    <p id="submitMsg"></p>
     <button
-      class="block px-6 py-2 text-xs font-bold text-white uppercase bg-red-600 rounded shadow hover:bg-red-500 focus:shadow-outline focus:outline-none"
+      class="block px-6 py-2 text-sm font-bold text-white uppercase bg-green rounded shadow hover:bg-greenDark focus:shadow-outline focus:outline-none"
       id="submitBtn"
     >
       Submit

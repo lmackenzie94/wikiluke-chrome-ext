@@ -1,6 +1,6 @@
 {
-  "name": "Better Brain",
-  "description": "For things you want to remember, but won't.",
+  "name": "wikiluke",
+  "description": "For things I want to remember, but won't.",
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
@@ -12,9 +12,9 @@
   "permissions": ["storage"],
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Better Brain"
+    "default_title": "wikiluke"
   },
   "icons": {
-    "16": "images/brain.png"
+    "16": "images/logo.png"
   }
 }
