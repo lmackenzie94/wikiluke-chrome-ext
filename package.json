@@ -1,7 +1,7 @@
 {
   "name": "wikiluke-chrome-extension",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "popup.js",
   "license": "MIT",
   "scripts": {
     "build": "gulp"
