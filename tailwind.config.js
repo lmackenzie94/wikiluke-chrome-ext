@@ -8,6 +8,8 @@ module.exports = {
         greenDark: '#2b5737',
         yellowDark: '#b57714',
         redDark: '#5c2121',
+        purple: '#3b4475',
+        purpleDark: '#262c4d',
       },
     },
   },

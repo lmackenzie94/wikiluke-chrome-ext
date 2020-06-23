@@ -30,6 +30,12 @@ function handleSubmit() {
       endpoint = 'advice';
       data = { text: advice };
       break;
+    case 'Learnings':
+      const learning = input1.value;
+      const category = input2.value;
+      endpoint = 'learnings';
+      data = { text: learning, category };
+      break;
     default:
       break;
   }
