@@ -8,6 +8,11 @@ const submitMsg = document.getElementById('submitMsg');
 
 submitBtn.addEventListener('click', handleSubmit);
 
+function resetForm() {
+  input1.value = '';
+  if (input2) input2.value = '';
+}
+
 function handleSubmit() {
   let endpoint;
   let data;
@@ -45,17 +50,16 @@ function handleSubmit() {
       console.log(data); // JSON data parsed by `response.json()` call
       submitMsg.innerText = 'Very nice! Great success!';
       submitMsg.classList.add('success');
-      input1.value = '';
-      if (input2) input2.value = '';
+      resetForm();
       setTimeout(() => {
         submitMsg.innerText = '';
         submitMsg.classList.remove('success');
       }, 5000);
     })
     .catch((error) => {
-      console.log(error);
       submitMsg.innerText = error.message;
       submitMsg.classList.add('error');
+      resetForm();
     });
 }
 
@@ -70,6 +74,9 @@ async function doFetch(endpoint = '', data = {}, method = 'POST') {
   });
 
   if (!response.ok) {
+    if (response.status === 409) {
+      throw new Error(`You've already saved that word`);
+    }
     throw new Error(`Something went wrong, please try again`);
   }
   return response.json(); // parses JSON response into native JavaScript objects
